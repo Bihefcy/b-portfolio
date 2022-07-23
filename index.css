@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --color1: #fbc710;
+    --color2: #f3f3f3;
+    --color3: #ffffff;
+    --color4: #272727;
+    --fonthead: 'Ibarra Real Nova', serif;
+    --fontbody: 'Inter', sans-serif;
+}
+
+html {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color3);
+    font-family: sans-serif;
+    
+}
+main {
+    width: 100%;
+    padding: 0 0px;
+    
+}
+header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#navbar {
+    width: 95%;
+    background-color: var(--color4);
+    height: 60px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 3%;
+    box-shadow: 1px 1px 5px var(--color1);
+    font-size: 0.7rem;
+    font-family: var(--fontbody);
+    
+}
+#navbar .a ul a {
+    text-decoration: none;
+    color: var(--color2);
+}
+#navbar .a ul a li:hover {
+    color: var(--color1);
+    border: 0px solid var(--color1);
+    border-bottom-width: 1px;
+}
+
+.a ul li {
+    display: inline;
+}
+.left ul {
+    padding: 0;
+}
+.right ul, .b {
+    padding: 0;
+}
+.left ul li {
+    margin-right: 20px;
+}
+.right ul li {
+    margin-left: 20px;
+}
+
+.welcome-section {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    position: relative;
+    top: -25px;
+}
+.land-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: var(--fonthead);
+}
+.welcome-section img {
+    object-fit: cover;
+}
+
+.land-text h1{
+    font-size: 7rem;
+    margin: 0;
+    padding: 0px;
+    color: #fbc710;
+}
+.land-text h2{
+    font-size: 5rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+    position: relative;
+    top: -25px;
+    background-color: #272727;
+    flex-direction: row;
+    font-family: var(--fontbody);
+    
+}
+.graphic {
+     text-align: center;
+     background-color: var(--color4);
+     width: 650px;
+     padding: 0 0;
+}
+.graphic h1 {
+    font-size: 3rem;
+    background-color: #fbc710;
+    color: white;
+    padding: 40px 0px;
+    margin: 0 0;
+    
+}
+.web {
+    text-align: center;
+    background-color: var(--color4);
+    width: 650px;
+}
+ .web h1{
+    background-color: var(--color3);
+    color: var(--color4);
+    padding: 40px 0px;
+    margin: 0 0;
+    font-size: 3rem;
+ }
+ .graphic p{
+    line-height: 30px;
+    color: var(--color2);
+ }
+ .web p{
+    line-height: 15px;
+    color: var(--color2);
+ }
+
+/*This the service section*/
+.services {
+    width: 100%;
+    background-color: var(--color3);
+    padding-top: 40px;
+    
+}
+.services h1{
+    text-align: center;
+    font-size: 5rem;
+    font-family: var(--fonthead);
+}
+.services-wrap {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontbody);
+}
+.service {
+    width: 300px;
+    margin: 20px 20px;
+    text-align: center;
+    background-color: var(--color4);
+    color: var(--color2);
+    padding: 30px 20px;
+    height: 250px;
+    position: relative;
+}
+.service-hover {
+    width: 0px;
+    height: 0px;
+    text-align: center;
+    padding: 0px 0px;
+    background-color: #fbc710;
+    color: var(--color4);
+    display: hidden;
+    overflow: hidden;
+    transition-property: width, height 10s;
+    transition-timing-function: linear;
+    position: absolute;
+    bottom: 10px;
+    top: -10px;
+    right: 10px;
+    left: -10px;
+}
+.service-hover img{
+    margin: 30px 20px 0;
+}
+.service-hover p {
+    margin: 10px 20px;
+}
+
+.service:hover .service-hover {
+    height: 108%;
+    width: 106%;
+}
+
+/*here-in lies the work section*/
+.work {
+    width: 100%;
+    padding-top: 30px;
+    font-family: var(--fontbody);
+}
+.work h1 {
+    font-family: var(--fonthead);
+    font-size: 5rem;
+}
+.work h1, h2 {
+    text-align: center;
+}
+.graphicd {
+    width: 100%;
+    background-color: var(--color3);
+    
+}
+.graphic-wrap {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.work1 {
+    width: 400px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.graphic-hover {
+    width: 400px;
+    height: 0%;
+    padding: 0px 0px;
+    background-color: #fbc710;
+    color: var(--color4);
+    overflow: hidden;
+    transition: .5s;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.graphic-hover p{
+    margin: 20px;
+    text-align: left
+}
+.work1:hover .graphic-hover{
+    height: 30%;
+}
+.work1:hover img{
+    opacity: 0.5;
+}
+
+/*here-in lies the web styling*/
+.webd {
+    width: 100%;
+    background-color: var(--color4);
+    padding-top: 40px;
+    color: var(--color3);
+}
+.web-wrap {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.web1 {
+    width: 400px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.web-hover {
+    width: 400px;
+    height: 0%;
+    padding: 0px 0px;
+    background-color: #fbc710;
+    color: var(--color4);
+    overflow: hidden;
+    transition: .5s;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.web-hover p{
+    margin: 20px;
+    text-align: left
+}
+.web1:hover .web-hover{
+    height: 30%;
+}
+.web1:hover img{
+    opacity: 0.5;
+}
+
+/* here in lies the contact page*/
+.contact {
+    width: 100%;
+    background-color: var(--color3);
+    padding-top: 40px;
+}
+.contact h1 {
+    text-align: center;
+    font-family: var(--fonthead);
+    font-size: 4rem;
+}
+form {
+    width: 80%;
+    max-width: 700px;
+    margin: 10px auto;
+}
+fieldset {
+    border: none;
+}
+input[type="text"], input[type="email"] {
+    width: 49%;
+    display: inline;
+    height: 30px;
+    background-color: var(--color1);
+    color: var(--color4);
+    border: none;
+    padding-left: 15px;
+    font-family: var(--fontbody);
+}
+input:hover, select:hover, textarea:hover{
+    background-color: #272727;
+    color: #f3f3f3;
+}
+select {
+    width: 49%;
+    height: 30px;
+    background-color: var(--color1);
+    color: var(--color4);
+    border: none;
+    padding-left: 9px;
+    font-family: var(--fontbody);
+}
+textarea {
+    width: 100%;
+    background-color: var(--color1);
+    color: var(--color4);
+    border: none;
+    padding-left: 9px;
+    padding-top: 10px;
+    font-family: var(--fontbody);
+}
+input[type="submit"] {
+    padding: 5px;
+    width: 100px;
+    background-color: var(--color4);
+    color: var(--color2);
+    font-family: var(--fontbody);
+}
+input[type="submit"]:hover {
+    padding: 5px;
+    width: 100px;
+    background-color: var(--color1);
+    color: var(--color4);
+    font-family: var(--fontbody);
+}
+/* here-in lies the footer*/
+footer {
+    width: 100%;
+    background-color: var(--color4);
+    color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontbody);
+}
+
+.email-and-number{
+    width: 80%;
+    max-width: 600px;
+    display: inline;
+    margin: 40px 0 0 0;
+    text-align: center;
+    font-size: 0.7rem;
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+}
+.email-and-number > div {
+    margin: 0px 10px;
+}
+
+.icons{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+ion-icon {
+    padding: 5px;
+}
